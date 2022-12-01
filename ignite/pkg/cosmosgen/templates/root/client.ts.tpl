@@ -11,6 +11,7 @@ import { Env } from "./env";
 import { UnionToIntersection, Return, Constructor } from "./helpers";
 import { Module } from "./modules";
 import { EventEmitter } from "events";
+import TypedEventEmitter from "typed-emitter";
 import { ChainInfo } from "@keplr-wallet/types";
 
 const defaultFee = {
@@ -18,7 +19,7 @@ const defaultFee = {
   gas: "200000",
 };
 
-export class IgniteClient extends EventEmitter {
+export class IgniteClient extends (EventEmitter as any as new () => TypedEventEmitter<Record<string | number, (...args: any[]) => void>>) {
 	static plugins: Module[] = [];
   env: Env;
   signer?: OfflineSigner;

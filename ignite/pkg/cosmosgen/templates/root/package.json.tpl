@@ -10,7 +10,8 @@
       "url": "http://www.apache.org/licenses/LICENSE-2.0"
     }
   ],
-  "main": "index.ts",
+  "main": "lib/index.js",
+  "types: "lib/index.d.ts",
   "publishConfig": {
     "access": "public"
   },
@@ -30,6 +31,7 @@
   }, 
   "devDependencies": {
     "@types/events": "^3.0.0",
+    "typed-emitter": "^2.1.0",
     "typescript": "^4.8.4"
   }
 }

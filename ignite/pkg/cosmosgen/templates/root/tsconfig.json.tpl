@@ -1,11 +1,9 @@
 {
     "compilerOptions": {
-      "target": "ES2020",
-      "module": "ES2020",
-      "moduleResolution": "node",
       "outDir": "./lib",
       "allowSyntheticDefaultImports": true,
-      "esModuleInterop": false,
+      "esModuleInterop": true,
+      "declaretion": true,
       "strict": false,
       "skipLibCheck": true
     }
