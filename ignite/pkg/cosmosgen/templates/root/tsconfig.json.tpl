@@ -3,7 +3,7 @@
       "outDir": "./lib",
       "allowSyntheticDefaultImports": true,
       "esModuleInterop": true,
-      "declaretion": true,
+      "declaration": true,
       "strict": false,
       "skipLibCheck": true
     }
